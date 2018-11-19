@@ -1,6 +1,11 @@
 ---
 templateKey: home-page
 title: Home Page
+bannerImages:
+  - image: /img/chemex.jpg
+    title: Test
+  - image: /img/jumbotron.jpg
+    title: tester
 ---
 ### Home Page amend test
 
