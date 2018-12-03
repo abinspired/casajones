@@ -1,11 +1,8 @@
 ---
 templateKey: home-page
 title: Home Page
-banner_images:
-  - image: /img/chemex.jpg
-    title: test
-  - image: /img/coffee-gear.png
-    title: tester 2
+main_image: /img/chemex.jpg
+image_tagline: Something something darkside
 ---
 ### Home Page amend test
 
