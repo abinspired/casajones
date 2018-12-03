@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 
-export const HomePageTemplate = ({ title, content, contentComponent }) => {
+export const HomePageTemplate = ({ banners, title, content, contentComponent }) => {
     const PageContent = contentComponent || Content
 
     return (
@@ -37,12 +37,13 @@ const HomePage = ({ data }) => {
     return (
         <Layout>
             <HomePageTemplate
+                banners={post.frontmatter.banner_images}
                 contentComponent={HTMLContent}
                 title={post.frontmatter.title}
                 content={post.html}
             />
         </Layout>
-    )
+    );
 }
 
 
@@ -54,6 +55,12 @@ export const homePageQuery = graphql`
       html
       frontmatter {
         title
+        banner_images{
+          title
+          image {
+            publicURL
+          }
+        }
       }
     }
   }
