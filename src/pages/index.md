@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: Home Page
-main_image: /img/chemex.jpg
+main_image: /img/casa-main-image.jpg
 image_tagline: Something something darkside
 ---
 ### Home Page amend test
